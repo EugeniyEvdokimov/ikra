@@ -1,0 +1,90 @@
+/* Fonts */
+@font-face 
+    font-family: 'phillippscriptregular'
+    src: url('../fonts/phillippscript-webfont.woff2') format('woff2'), url('../fonts/phillippscript-webfont.woff') format('woff'),  url('../fonts/phillippscript-webfont.svg#phillippscriptregular') format('svg')
+    font-weight: normal
+    font-style: normal
+
+
+
+
+.container
+	max-width: 1530px
+
+
+// Titles
+.title
+	&.title-lg
+		font-family: $default-font
+
+
+// Buttons
+.btn
+	border-radius: 2px
+	border: 1px solid transparent
+	cursor: pointer
+	font-family: $default-font
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&.btn-sm
+		padding: 9px 34px
+		&:hover
+			background-color: $background-white
+			color: $text-black
+	&+.bnt-sm
+		margin-left: 16px
+	&.btn-lg
+		padding: 17px 44px
+		color: $text-black
+		font-size: 19px
+		font-weight: 700
+		letter-spacing: 1px
+		text-transform: uppercase
+	&.btn-md
+		height: 48px
+		border-radius: 2px
+		padding: 13px 38px
+		font-size: 18px
+		font-weight: 500
+	&.btn-default
+		border-color: #fff
+		color: $text-white
+		font-size: 15px
+		font-weight: 500
+		text-transform: uppercase
+	&.btn-primary
+		background-color: $background-blue
+		color: $text-white
+	&.btn-info
+		background-color: $background-yellow
+	&.btn-basic
+		background-color: $background-white
+		color: $text-blue
+
+// Forms
+.form-inline
+	display: flex
+  	flex-flow: row wrap
+  	align-items: center	
+	.form-group
+		display: flex
+    	flex: 0 0 auto
+    	flex-flow: row wrap
+    	align-items: center
+    	margin-bottom: 0
+		&+.form-group
+			margin-left: 20px
+		&+.btn
+			margin-left: 20px
+		.form-control
+			padding: 24px
+			border-radius: 2px
+			background-color: $background-white	
+			border: none
+			color: #000000
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 400
+			&:focus
+				outline: none
