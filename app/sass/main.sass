@@ -269,14 +269,32 @@ b, strong
 						form
 							margin-top: 28px
 							.form-group
-								margin-bottom: 15px
+								position: relative
+								margin-bottom: 26px
+								label
+									width: 35px
+									text-align: center
+									position: absolute
+									&.icon-user
+										font-size: 28px
+										bottom: 0
+									&.icon-smartphone
+										font-size: 31px
+										bottom: 0
+									&.icon-email
+										font-size: 24px
+										bottom: 0
 								input
+									color: $text-black
+									font-family: $default-font
+									font-size: 18px
+									font-weight: 400
 									width: 100%
 									border: none
 									border-bottom: 2px solid #000
+									padding-left: 53px
 									&:focus
 										outline: none
-									&
 							.btn
 								cursor: pointer
 								&:focus
