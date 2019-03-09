@@ -5,86 +5,107 @@
     font-weight: normal
     font-style: normal
 
+@font-face 
+  font-family: 'icomoon'
+  src:  url('../fonts/icomoon.eot?yy2l9n')
+  src:  url('../fonts/icomoon.eot?yy2l9n#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?yy2l9n') format('truetype'),  url('../fonts/icomoon.woff?yy2l9n') format('woff'), url('../fonts/icomoon.svg?yy2l9n#icomoon') format('svg')
+  font-weight: normal
+  font-style: normal
 
 
+.icon 
+  font-family: 'icomoon' !important
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.icon-email:before 
+  content: "\e900"
+
+.icon-facebook:before 
+  content: "\e901"
+
+.icon-instagram:before 
+  content: "\e902"
+
+.icon-smartphone:before 
+  content: "\e903"
+
+.icon-user:before 
+  content: "\e904"
+
+.icon-close:before 
+  content: "\e5cd"
+
+.icon-menu:before 
+  content: "\e5d2"
+
+
+.mr-auto 
+    margin-right: auto
+
+.ml-auto
+	margin-left: auto
+
+a
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+ul
+	list-style: none
+	margin: 0
+	padding: 0
+
+img
+	max-width: 100%
 
 .container
 	max-width: 1530px
+	&.interval
+		padding-top: 50px
+		padding-bottom: 50px
 
 
 // Titles
 .title
+	font-family: $default-font
+	font-weight: 700
 	&.title-lg
-		font-family: $default-font
+		color: $text-black
+		font-size: 36px
+		line-height: 36px
+		padding-left: 136px
+		margin-bottom: 40px
 
 
 // Buttons
 .btn
-	border-radius: 2px
-	border: 1px solid transparent
-	cursor: pointer
-	font-family: $default-font
-	text-decoration: none
+	background-color: $bg-gold
+	color: $text-black
+	border-radius: 10px
+	border: 2px solid $bg-gold
+	display: flex
+	align-items: center
+	justify-content: center
+	transition: all .3s ease-in-out
 	&:hover
-		text-decoration: none
+		background-color: $bg-transparent
+		color: $text-gold
 	&.btn-sm
-		padding: 9px 34px
-		&:hover
-			background-color: $background-white
-			color: $text-black
-	&+.bnt-sm
-		margin-left: 16px
+		height: 34px
+		padding: 0 57px
 	&.btn-lg
-		padding: 17px 44px
-		color: $text-black
-		font-size: 19px
-		font-weight: 700
-		letter-spacing: 1px
-		text-transform: uppercase
-	&.btn-md
-		height: 48px
-		border-radius: 2px
-		padding: 13px 38px
-		font-size: 18px
-		font-weight: 500
-	&.btn-default
-		border-color: #fff
-		color: $text-white
-		font-size: 15px
-		font-weight: 500
-		text-transform: uppercase
-	&.btn-primary
-		background-color: $background-blue
-		color: $text-white
-	&.btn-info
-		background-color: $background-yellow
-	&.btn-basic
-		background-color: $background-white
-		color: $text-blue
+		font-size: 24px
+		height: 55px
+	&.btn-block
+		width: 100%
 
 // Forms
-.form-inline
-	display: flex
-  	flex-flow: row wrap
-  	align-items: center	
-	.form-group
-		display: flex
-    	flex: 0 0 auto
-    	flex-flow: row wrap
-    	align-items: center
-    	margin-bottom: 0
-		&+.form-group
-			margin-left: 20px
-		&+.btn
-			margin-left: 20px
-		.form-control
-			padding: 24px
-			border-radius: 2px
-			background-color: $background-white	
-			border: none
-			color: #000000
-			font-family: $default-font
-			font-size: 18px
-			font-weight: 400
-			&:focus
-				outline: none

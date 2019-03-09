@@ -47,79 +47,26 @@ $(window).bind('resize',function(){
 
 $(document).ready(function() {
 
-    // init writers carousel
+    // init owl carousel
     $(document).ready(function() {
-        var owl = $(".writers-carousel");
+        var owl = $(".owl-carousel");
         owl.owlCarousel({
-            items: 4,
-            itemsDesktop: [1280, 4],
-            itemsDesktopSmall: [960, 2],
-            itemsTablet: [600, 1],
+            items: 1,
             itemsMobile: false,
             pagination: false,
-            dots: false,
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 2
-                },
-                960: {
-                    items: 2
-                },
-                1080: {
-                    items: 3
-                },
-                1280: {
-                    items: 4
-                }
-            }
+            dots: true,
+            loop: true,
+            autoplay: true,
+            autoplaySpeed: 1000
         });
     });
 
-      // init reviews carousel
-    $(document).ready(function() {
-        var owl = $(".reviews-carousel");
-        owl.owlCarousel({
-            items: 2,
-            itemsDesktop: [1280, 2],
-            itemsDesktopSmall: [960, 1],
-            itemsTablet: [600, 1],
-            itemsMobile: false,
-            pagination: false,
-            dots: false,
-            stagePadding: 100,
-            responsive: {
-                0: {
-                    items: 1,
-                    stagePadding: 0
-                },
-                600: {
-                    items: 1,
-                    stagePadding: 0
-                },
-                960: {
-                    items: 1,
-                    stagePadding: 100
-                },
-                1080: {
-                    items: 2
-                },
-                1280: {
-                    items: 2
-                }
-            }
-        });
-    });
+      // init mobile menu
+      $('.navbar-toggler').on('click', function () {
+          $('.header-nav').toggleClass('collapse');
+      })
 
-    // 
-    $(".nav-link").on("click", function(e){
-        var anchor = $(this);
-        $('html, body').stop().animate({scrollTop: $(anchor.attr('href')).offset().top}, 777);
-        e.preventDefault();
-        return false;
-    });
+
 
 });
 

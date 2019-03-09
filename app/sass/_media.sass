@@ -3,43 +3,201 @@
 
 /*==========  Desktop First  ==========*/
 
-@media screen and (min-width: 1500px)
-	//1500px
+// @media screen and (min-width: 1500px)
+// 	//1500px
 
-@media screen and (min-width: 1700px)
-
-
-// ≥1200px
-+media-breakpoint-down(lg)
-
-// ≥992px
-+media-breakpoint-down(md)
-
-@media screen and (max-width: 1700px)
-
-@media screen and (max-width: 1280px)
+// @media screen and (min-width: 1700px)
 
 
-@media screen and (max-width: 1200px)
+// @media screen and (max-width: 1700px)
+
+
+@media screen and (max-width: 1400px)
+    .footer
+        .container
+            .footer-info
+                width: 100%
+                .footer-logo
+                .footer-description
+                    margin-left: auto
+                    margin-right: 0
+
+
+
+// @media screen and (max-width: 1280px)
+
+
+@media screen and (max-width: 1024px)
+    .header
+        .header-top
+            .container
+                .header-logo
+                    margin-bottom: auto
+                    a
+                        max-width: 100px
+                .header-description
+                    font-size: 14px
+                .header-contacts
+                    .header-phones
+                        .header-phone-item
+                            .icon
+                                font-size: 36px
+                            .phones
+                                span
+                                    font-size: 14px
+                    .btn
+                        width: 100%
+                        margin-bottom: 7px
+    .main
+	    .inner
+		    .owl-carousel
+			    position: relative
+			    .carousel-item
+                    height: 300px
+                    background-position: 50% 50%
+                    .container 
+                        .carousel-item-title
+                            font-size: 24px
+                            line-height: 30px
+                            margin-bottom: 10px
+                        .carousel-item-content
+                            font-size: 18px
+                            line-height: 24px
+                            max-width: 65%
+                            margin-bottom: 30px
+
+
+
+// @media screen and (max-width: 1200px)
+// 	body,html
+// 		overflow-x: hidden
+	
 
 @media screen and (max-width: 1080px)
+    .all-products-page
+        .container
+            .all-products-container
+                .row
+                    .product
+                        flex: 0 0 33.333%
+                        max-width: 33.333%
 
+				
 
 @media screen and (max-width: 960px)
-	body,html
-		overflow-x: hidden
+    .footer
+        .container
+            .footer-item
+                padding: 10px 20px
 
-@media screen and (max-width: 800px)
+@media screen and (max-width: 900px)
+    .all-products-page
+        .container
+            .all-products-container
+                .row
+                    .product
+                        flex: 0 0 50%
+                        max-width: 50%
 
+@media screen and (max-width: 768px)
+    .header
+        .header-top
+            .container
+                .header-logo
+                    margin-bottom: auto
+                    a
+                        max-width: 100px
+                .header-description
+                    font-size: 10px
+                .header-contacts
+                    margin-left: auto
+                    margin-right: auto
+                    .header-phones
+                        .header-phone-item
+                            .icon
+                                font-size: 30px
+                            .phones
+                                span
+                                    font-size: 10px
+                    .btn
+                        width: 100%
+                        margin-bottom: 7px
+        .header-bottom
+            .container
+                position: relative
+                .navbar-toggler
+                    display: block
+                .header-nav
+                    display: none
+                    height: 0
+                    top: 0
+                    &.collapse
+                        position: absolute
+                        top: 49px
+                        left: 0
+                        right: 0
+                        display: flex
+                        flex-direction: column
+                        z-index: 2
+                        text-align: center
+                        background-color: $bg-black
+                        padding: 20px
+                        height: auto
+                        a
+                            margin: 15px 0
+                            &.active
+                                border: none
+    .main
+	    .inner
+		    .owl-carousel
+			    position: relative
+			    .carousel-item
+                    padding: 30px 10px
+                    background-position: 50% 50%
+                    .container 
+                        justify-content: space-around !important
+                        .carousel-item-title
+                            margin-bottom: 0
+                        .carousel-item-content
+                            display: none
+    
+    .owl-dots
+        bottom: 0 !important
 
 @media screen and (max-width: 600px)
+    .all-products-page
+        .container
+            .all-products-container
+                .row
+                    .product
+                        flex: 0 0 100%
+                        max-width: 320px
+                        margin: auto
+
+                       
+
+@media screen and (max-width: 500px)
+    .footer
+        .container
+            justify-content: space-around !important
+            .footer-info
+                .footer-logo
+                    margin-right: 10px
+                    a
+                        max-width: 100px
+                .footer-description
+                    margin: 0
+                    width: calc(100% - 110px)
+            .footer-item
+                width: 100%
+                padding: 10px 20px
+                text-align: center
+                .social-nav
+                    justify-content: center
+                .phone-item-wrap
+                    justify-content: center
 
 
-@media screen and (max-width: 440px)
-	.footer
-		.container
-			.payment
-				display: none !important
 	
 
 /*==========  Mobile First  ==========*/

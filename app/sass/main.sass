@@ -43,540 +43,235 @@ b, strong
 	font-family: 'Roboto', sans-serif
 	font-size: 16px
 
-.header 
-	position: absolute
-	top: 0
-	left: 0
-	right: 0
-	background: -moz-linear-gradient(left, rgba(45,83,121,1) 0%, rgba(255,255,255,0) 100%)
-	background: -webkit-linear-gradient(left, rgba(45,83,121,1) 0%,rgba(255,255,255,0) 100%)
-	background: linear-gradient(to right, rgba(45,83,121,1) 0%,rgba(255,255,255,0) 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d5379', endColorstr='#00ffffff',GradientType=1 )
-	.container
-		position: relative
-		height: 80px
-		.authorization
-			.btn
-				&+.btn
-					margin-left: 16px
-		.nav-link
-			color: $text-white
-			font-family: $default-font
-			font-size: 15px
-			font-weight: 500
-			line-height: 32px
-			text-transform: uppercase	
-			padding: 0 35px
-			&:hover
-				text-decoration: none
-		.m-ligin
+// header
+.header
+	.header-top
+		background-color: $bg-white
+		.container
+			.header-logo
+				a
+					display: block
+			.header-description
+				color: $text-black
+				font-family: $default-font
+				font-size: 18px
+				font-weight: 400
+			.header-contacts
+				.header-phones
+					.header-phone-item
+						.icon
+							font-size: 43px
+						.phones
+							margin-left: 9px
+							span
+								color: $text-black
+								font-family: $default-font
+								font-size: 16px
+								font-weight: 700
+								line-height: 24px
+						&+.header-phone-item
+							margin-left: 22px
+				.btn
+					margin-top: 7px
+	.header-bottom
+		background-color: $bg-black
+		padding: 17px 0
+		.navbar-toggler
 			display: none
+			background-color: $bg-transparent
+			color: $text-white
+			border: none
+			border-radius: 3px
+			font-size: 30px
+			&:focus
+				outline: none
+		.header-nav
+			a
+				color: $text-white
+				font-family: $default-font
+				font-size: 18px
+				font-weight: 700
+				line-height: 18px
+				&:hover
+					border-bottom: 1px solid #fff
+				&.active
+					border-bottom: 1px solid #fff
+				&+a
+					margin-left: 29px
 
-.inner
-	min-height: 804px
-	background-image: url('../img/herro.png')
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center center
-	padding-top: 80px
-	.inner-content
-		padding: 92px 0
-		h1
-			color: $text-white
-			font-family: $default-font
-			font-size: 46px
-			font-weight: 100
-			line-height: 56px
-			text-transform: uppercase
-			max-width: 688px
-			strong
-				color: $text-white
-				font-family: $default-font
-				font-size: 46px
-				font-weight: 700
-				line-height: 56px
-				text-transform: uppercase
-		span
-			color: $text-white
-			font-family: $default-font
-			font-size: 20px
-			font-weight: 300
-			line-height: 34px
-			max-width: 556px
-			display: block
-			margin-top: 14px
-			strong
-				font-weight: 500
-	.subscription
-		margin-top: 49px
-		h2
-			color: $text-white
-			font-family: $default-font
-			font-size: 20px
-			font-weight: 700
-			letter-spacing: 0.5px
-			line-height: 34px
-			text-transform: uppercase
-			margin-bottom: 17px
-		.form-info
-			opacity: 0.7
-			color: $text-white
-			font-family: $default-font
-			font-size: 15px
-			font-weight: 300
-			line-height: 20px
-			padding-left: 24px
+// main
+.main
+	.inner
+		.owl-carousel
 			position: relative
-			margin-top: 12px
-			&:before
+			.carousel-item
+				cursor: grab
+				height: 480px
+				background-repeat: no-repeat
+				background-position: 95% 50%
+				background-color: $bg-dark
+				.container
+					height: 100%
+					.carousel-item-title
+						font-family: $default-font
+						color: $text-white
+						font-size: 48px
+						font-weight: 700
+						text-transform: uppercase
+						margin-bottom: 17px
+					.carousel-item-content
+						font-family: $default-font
+						color: $text-white
+						font-size: 24px
+						font-weight: 300
+						max-width: 657px
+						margin-bottom: 67px
+					.btn
+						max-width: 375px
+			.owl-dots
 				position: absolute
-				top: 0
-				left: 0
-				content: ""
-				width: 14px
-				height: 18px
-				background-image: url("../img/lock.png")
-		.form-inline
-			#form-title
-				width: 313px
-				height: 64px
-			#form-email
-				width: 237px
-				height: 64px
-.about-us
-	padding: 36px 0 39px
-	background-color: $background-gray
-	.our-team
-		.team-item
-			color: #293d51
-			font-family: $default-font
-			font-size: 17px
-			font-weight: 400
-			line-height: 34px
-			strong
-				width: 58px
-				color: #293d51
-				font-family: $default-font
-				font-size: 17px
-				font-weight: 700
-				line-height: 34px
-	.warranty
-		width: 35%
-		margin-bottom: 10px
-		.warranty-img
-			padding: 36px 19px 36px 31px
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03)
-			border-radius: 2px
-			background-color: $background-white
-			margin-right: 16px
-		.warranty-content
-			p
-				color: $text-dark
-				font-family: $default-font
-				font-size: 16px
-				font-weight: 300
-				line-height: 25px
-				margin-bottom: 0
-	.plagiarism
-		width: 35%
-		margin-bottom: 10px
-		.plagiarism-img
-			padding: 35px 30px 35px 30px
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03)
-			border-radius: 2px
-			background-color: $background-white
-			margin-right: 16px
-		.plagiarism-content
-			p
-				color: $text-dark
-				font-family: $default-font
-				font-size: 16px
-				font-weight: 300
-				line-height: 25px
-				margin-bottom: 0
-.our-writers
-	padding: 82px 0 60px
-	background-color: $background-white
-	.writers-carousel
-		position: relative
-		margin: 0 -10px
-		.owl-nav
-			position: absolute
-			top: -96px
-			right: 0
-			display: block
-		.writer-item
-			position: relative
-			border-radius: 2px
-			border: 1px solid #dde3ee
-			background-color: $background-white
-			padding: 36px
-			margin: 0 10px
-			.writer-status
-				position: absolute
-				top: 12px
-				right: -4px
-				height: 20px
-				border-radius: 1px;
-				background-color: $background-green
-				padding: 0 8px 0 20px
-				color: $text-white
-				font-family: "Open Sans"
-				font-size: 13px
-				font-weight: 400
-				span
-					content: ""
-					width: 7px
-					height: 7px
-					background-color: $background-white
-					position: absolute
-					top: 50%
-					left: 8px
-					transform: translateY(-50%)
-					border-radius: 50%
-			.writer-item-info
-				.writer-name
-					color: $text-dark
-					font-family: $default-font
-					font-size: 18px
-					font-weight: 500
-				.writer-rating
-					list-style: none
-					margin: 0
-					padding: 0
-					.icon	
-						font-size: 18px
-						&.icon-star-full
-							color: $icons-full
-						&.icon-star-half
-							color: $icons-full
-						&.icon-star-empty
-							color: $icons-empty
+				bottom: 16px
+				left: 50%
+				transform: translateX(-50%)
+				.owl-dot
 					span
-						color: $text-black
-						font-family: $default-font
-						font-size: 18px
-						font-weight: 500
-						margin-left: 8px
-						line-height: 18px
-			.writer-item-description
-				margin: 21px 0 17px
-				p
-					color: $text-dark
-					font-family: $default-font
-					font-size: 14px
-					font-weight: 400
-					line-height: 25px
-					margin-bottom: 0
-			.writer-item-statistic
-				margin-bottom: 25px
-				.statistic-separator
-					width: 1px
-					height: 60px
-					background-color: #e5ebef
-				.statistic-works
-					width: 40%
-					.statistic-count
-						color: $text-dark
-						font-family: $default-font
-						font-size: 18px
-						font-weight: 500
-					.statistic-title
-						color: $text-dark
-						font-family: $default-font
-						font-size: 14px
-						font-weight: 400
-						line-height: 18px
-				.statistic-reviews
-					width: 35%
-					.statistic-count
-						color: $text-dark
-						font-family: $default-font
-						font-size: 18px
-						font-weight: 500
-					.statistic-title
-						color: $text-dark
-						font-family: $default-font
-						font-size: 14px
-						font-weight: 400
-						line-height: 18px
-			.btn
-				margin: 0
+						width: 12px
+						height: 12px
+						border: 2px solid $bg-gold
+						background-color: $bg-transparent
+					&.active
+						span
+							background-color: $bg-gold
+					&:focus
+						outline: none
 
-.how-it-works
-	padding: 72px 0 87px
-	background-repeat: no-repeat
-	background-size: cover
-	background-image: url("../img/steps.png")
-	.work-steps
-		margin: 0
-		padding: 0
-		li
-			margin-right: 28px
-			strong
-				color: $text-white
-				font-family: $default-font
-				font-size: 62px
-				font-weight: 400
-			span
-				position: relative
-				color: $text-white
-				font-family: $default-font
-				font-size: 19px
-				font-weight: 400
-				line-height: 28px
-				&:after
-					position: absolute
-					content: ""
-					width: 14px
-					height: 38px
-					background-image: url("../img/chevron.png")
-					background-size: cover
-					background-repeat: no-repeat
-					top: 50%
-					right: 0
-					transform: translateY(-50%)
-			&:last-of-type
-				span
-					&:after
-						display: none
-	.button-wtrap
-		min-width: 233px
-		margin-left: 60px
-		.btn-info
-			color: $text-blue
-			text-transform: uppercase
-.reviews
-	margin-top: 75px
-	.reviews-info
-			color: $text-dark
-			font-family: $default-font
-			font-size: 20px
-			font-weight: 400
-			line-height: 35px
-			margin-left: 35px
-	.reviews-carousel
-		position: relative
-		padding-left: calc((100% - 1280px) / 2)
-		.owl-nav
-			position: absolute
-			top: -96px
-			right: calc((100% - 1280px) / 2)
-			display: block
-		.review-item
-			width: 632px
-			border-radius: 2px
-			background-color: $background-gray
-			padding: 46px
-			margin: 0 10px
-			.review-rating
-				list-style: none
-				margin: 0
-				padding: 0
-				.icon	
-					font-size: 24px
-					&.icon-star-full
-						color: $icons-full
-					&.icon-star-half
-						color: $icons-full
-					&.icon-star-empty
-						color: $icons-empty
-			.review-content
-				margin: 40px 0 56px
-				color: $text-dark
-				font-family: $default-font
-				font-size: 17px
-				font-weight: 300
-				line-height: 35px
-				max-width: 460px
-			.review-item-info
-				.review-avatar
-					margin-right: 18px
-				.review-details
-					margin-right: auto
-				.review-date
-					color: $text-dark
-					font-family: $default-font
-					font-size: 14px
-					font-weight: 400
-					line-height: 25px
-					opacity: .4
-	.owl-stage-outer
-		.owl-stage
-			padding-left: 0 !important
-.plagiarizm-checker
-	margin: 76px 0 40px
-	.plagiarizm-carousel
-		margin: 0 -10px
-		.plagiarizm-item
-			border-radius: 2px
-			border: 1px solid #d6deea
-			background-color: $background-white
-			width: calc(50% - 20px)
-			margin: 0 10px 20px
-			.plagiarizm-item-img
-				position: relative
-				border-radius: 2px 0 0 2px
-				background-color: $background-blue
-				width: 163px
-				img
-					position: absolute
-					top: 50%
-					left: 50%
-					transform: translate(-50%, -50%)
-			.plagiarizm-item-content
-				width: calc(100% - 163px)
-				padding: 45px
-				span
-					color: $text-dark-blue
-					font-family: $default-font
-					font-size: 23px
-					font-weight: 500
-					margin-bottom: 28px
-				p
-					color: $text-dark-blue
-					font-family: $second-font
-					font-size: 16px
-					line-height: 28px
-.our-subscription
-	padding: 67px 0
-	background-image: url("../img/subscription.png")
-	background-size: cover
-	background-repeat: no-repeat
-	background-position: top right
-	.subscription-content
-		max-width: 796px
-		.title
-			margin-bottom: 7px
-		span
-			color: $text-dark-black
-			font-family: $default-font
-			font-size: 22px
-			font-weight: 400
-			line-height: 40px
-			margin-bottom: 20px
-	.form-inline
-			#form-title
-				width: 411px
-				height: 64px
-			#form-email
-				width: 244px
-				height: 64px
-	.form-info
-			opacity: 0.7
-			color: $text-dark-black
-			font-family: $default-font
-			font-size: 15px
-			font-weight: 300
-			line-height: 20px
-			padding-left: 24px
-			position: relative
-			margin-top: 12px
-			&:before
-				position: absolute
-				top: 0
-				left: 0
-				content: ""
-				width: 14px
-				height: 18px
-				background-image: url("../img/lock-2.png")
+	.all-products-page
+		.container
+			.all-products-container
+				.row
+					.card
+						min-width: 282px
+						position: relative
+						background-color: $bg-white
+						margin-bottom: 82px
+						.product-img
+							padding-top: 10px
+							// transition: all .1s linear
+						.product-info
+							padding: 20px 12px
+							// transition: all .1s linear
+							.product-title
+								span
+									font-family: $default-font
+									color: $text-black
+									font-size: 24px
+									font-weight: 700
+									line-height: 18px
+							.product-packing
+								height: 84px
+								margin-bottom: 20px
+								li
+									display: flex
+									align-items: center
+									margin: 5px 10px
+									span
+										display: inline-block
+										margin-right: 16px
+										&.icon-weight
+											width: 28px
+											height: 34px
+											background-image: url("../img/weight.png")
+											background-repeat: no-repeat
+										&.icon-jar
+											width: 33px
+											height: 22px
+											background-image: url("../img/jar.png")
+											background-repeat: no-repeat
+							.product-description
+								display: none
+								p
+									font-family: $default-font
+									color: $text-black
+									font-size: 18px
+									font-weight: 400
+									line-height: 22px
+									margin-bottom: 0
+								.specifications
+									margin: 20px 0
+									span
+										font-weight: 700
+						&:hover
+							height: 269px
+							z-index: 2
+							.product-img
+								box-shadow: 0 0px 10px rgb(152, 152, 152)
+							.product-info
+								z-index: 2
+								background-color: $bg-white
+								box-shadow: 0 6px 10px rgb(152, 152, 152)
+								.product-description
+									display: block
 
+
+
+// footer
 .footer
-	padding: 30px 0
-	background-color: $background-dark-blue
-	.contacts
-		a
-			color: $text-white
-			font-family: $second-font
-			font-size: 16px
-			padding-left: 40px
-			&:hover
-				text-decoration: none
-				span
-					padding-bottom: 3px
-					border-bottom: 1px dotted rgba(255, 255, 255, 0.5)
-			&+a
-				margin-left: 47px
-		.contact-email
-			position: relative
-			&:before
-				position: absolute
-				content: ""
-				width: 28px
-				height: 28px
-				background-image: url("../img/at.png")
-				background-repeat: no-repeat
-				margin-right: 12px
-				left: 0
-		.contact-phone
-			position: relative
-			&:before
-				position: absolute
-				content: ""
-				width: 28px
-				height: 28px
-				background-image: url("../img/phone.png")
-				background-repeat: no-repeat
-				margin-right: 12px
-				left: 0
-	.payment
-		span
-			color: $text-white
-			font-family: $second-font
-			font-size: 16px
-			line-height: 20px
-			margin-right: 12px
-		.payment-system
-			list-style: none
-			margin: 0
-			padding: 0
-			li
-				&+li
-					margin-left: 12px
-			
-			
+	background-color: $bg-black
+	padding-bottom: 17px
+	.container
+		.footer-info
+			.footer-logo
+				a
+					display: block
+			.footer-description
+				color: $text-white
+				font-family: $default-font
+				font-size: 16px
+				font-weight: 400
+				margin-top: 19px
+		.footer-item
+			.footer-title
+				color: $text-gold
+				font-size: 18px
+				text-transform: uppercase
+				margin: 19px 0 17px
+			.footer-nav
+				li
+					&+li
+						margin-top: 10px
+					a
+						color: $text-white
+						font-family: $default-font
+						font-size: 18px
+						font-weight: 400
+						&:hover
+							border-bottom: 1px solid #ffffff
+			.social-nav
+				li
+					.icon
+						font-size: 42px
+						color: $text-white
+					&+li
+						margin-left: 18px
+			.footer-contacts
+				.footer-phone-item
+					.icon
+						font-size: 43px
+						color: $text-white
+					.phones
+						margin-left: 9px
+						span
+							color: $text-white
+							font-family: $default-font
+							font-size: 16px
+							font-weight: 700
+							line-height: 24px
+					&+.footer-phone-item
+						margin-top: 4px
+				.btn
+					margin-top: 10px
 
 // owl carousel
-.owl-nav
-	.owl-prev
-		width: 48px
-		height: 48px
-		border-radius: 2px !important
-		border: 1px solid #dde3ee !important
-		background-color: $background-white !important
-		position: relative
-		&:focus
-			outline: none
-		span
-			display: none !important
-		&:before
-			position: absolute
-			content: "\e901"
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			font-size: 24px
-			color: $text-dark
-			font-family: $iconmoon-font
-	.owl-next
-		width: 48px
-		height: 48px
-		border-radius: 2px !important
-		border: 1px solid #dde3ee !important
-		background-color: $background-white !important
-		position: relative
-		&:focus
-			outline: none
-		span
-			display: none !important
-		&:before
-			position: absolute
-			content: "\e900"
-			top: 50%
-			left: 50%
-			transform: translate(-50%, -50%)
-			font-size: 24px
-			color: $text-dark
-			font-family: $iconmoon-font
+
 
 @import "media"
