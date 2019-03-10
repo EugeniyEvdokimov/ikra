@@ -179,6 +179,7 @@ b, strong
 						margin-bottom: 82px
 						.product-img
 							padding-top: 10px
+							max-height: 257px
 							// transition: all .1s linear
 						.product-info
 							padding: 20px 12px
@@ -276,39 +277,115 @@ b, strong
 					.contact-form
 						padding: 60px 138px 95px
 						box-shadow: 0 0 9px rgba(0, 0, 0, 0.35)
-						form
-							margin-top: 28px
-							.form-group
-								position: relative
-								margin-bottom: 26px
-								label
-									width: 35px
-									text-align: center
-									position: absolute
-									&.icon-user
-										font-size: 28px
-										bottom: 0
-									&.icon-smartphone
-										font-size: 31px
-										bottom: 0
-									&.icon-email
-										font-size: 24px
-										bottom: 0
-								input
-									color: $text-black
+						
+	.wholesale
+		margin-bottom: 20px
+		.container
+			.aside
+				.wholesale-products
+					.aside-products-item
+						width: 50%
+						margin-bottom: 30px
+						img
+							max-height: 173px
+						span
+							margin-top: 14px
+							font-family: $default-font
+							color: $text-black
+							font-size: 18px
+							font-weight: 700
+							text-align: center
+			.wholesale-form
+				.title
+					text-indent: 50px
+					margin-bottom: 43px
+				.sub-title
+					p
+						margin-bottom: 0
+				.wholesale-description
+					max-width: 807px
+				.wholesale-form-wrapper
+					padding: 50px 20px
+					box-shadow: 0 0 9px rgba(0,0,0,.35)
+					max-width: 780px
+					margin-top: 20px
+					margin-bottom: 50px
+					.title
+						font-weight: 400
+						text-indent: 0
+					form
+						padding: 0 15%
+			.title
+				margin-bottom: 50px
+			.packing-wrapper
+				.packing-item
+					width: 282px
+					margin: 0 60px
+					.packing-type
+						font-family: $default-font
+						color: $text-black
+						font-size: 24px
+						font-weight: 500
+						line-height: 24px
+						border-bottom: 1px solid #000000
+					.card
+						margin-top: 50px
+						.product-img
+						.product-info
+							padding: 20px 12px
+							.product-title
+								span
 									font-family: $default-font
-									font-size: 18px
-									font-weight: 400
-									width: 100%
-									border: none
-									border-bottom: 2px solid #000
-									padding-left: 53px
-									&:focus
-										outline: none
-							.btn
-								cursor: pointer
-								&:focus
-									outline: none
+									color: $text-black
+									font-size: 24px
+									font-weight: 700
+									line-height: 24px
+							.product-packing
+								height: 84px
+								margin-bottom: 20px
+								li	
+									display: flex
+									align-items: center
+									margin: 5px 10px
+									span
+										display: inline-block
+										margin-right: 16px
+										&.icon-weight
+											width: 28px
+											height: 34px
+											background-image: url(../img/weight.png)
+											background-repeat: no-repeat
+										&.icon-jar
+											width: 33px
+											height: 22px
+											background-image: url(../img/jar.png)
+											background-repeat: no-repeat
+			.advantages
+				max-width: 1036px
+				margin: 20px auto
+				.advantage-item
+					width: calc(25% - 30px)
+					min-height: 386px
+					// margin: 0 15p
+					padding: 0 15px 15px
+					box-shadow: 0 0 9px rgba(0, 0, 0, 0.35)
+					img
+						margin: 35px 0 40px
+					.advantage-title
+						font-family: $default-font
+						color: $text-black
+						font-size: 24px
+						font-weight: 500
+					.advantage-description
+						margin-top: 24px
+						p
+							font-family: $default-font
+							color: $text-black
+							font-size: 14px
+							font-weight: 400
+							line-height: 18px
+							text-align: center
+
 	.single-page
 		margin-bottom: 50px
 		.aside
@@ -318,7 +395,7 @@ b, strong
 		.page
 			padding-left: 30px
 			.title
-				padding-left: 145px
+				text-indent: 145px
 				margin-bottom: 40px
 			.page-content
 				p
@@ -352,11 +429,7 @@ b, strong
 				margin-top: 50px
 
 
-
-
-
-
-
+// breadcrumbs
 .breadcrumbs
 	margin: 10px 0 21px
 	li
@@ -376,6 +449,41 @@ b, strong
 				content: "/"
 				margin-left: 3px
 				color: $text-black
+
+// form
+form
+	margin-top: 28px
+	.form-group
+		position: relative
+		margin-bottom: 26px
+		label
+			width: 35px
+			text-align: center
+			position: absolute
+			&.icon-user
+				font-size: 28px
+				bottom: 0
+			&.icon-smartphone
+				font-size: 31px
+				bottom: 0
+			&.icon-email
+				font-size: 24px
+				bottom: 0
+		input
+			color: $text-black
+			font-family: $default-font
+			font-size: 18px
+			font-weight: 400
+			width: 100%
+			border: none
+			border-bottom: 2px solid #000
+			padding-left: 53px
+			&:focus
+				outline: none
+	.btn
+		cursor: pointer
+		&:focus
+			outline: none
 
 // footer
 .footer
