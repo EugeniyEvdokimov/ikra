@@ -5,7 +5,17 @@
 
 
 body
-	font-family: 'Roboto', sans-serif
+	color: $text-black
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+
+h6
+	color: $text-black
+	font-family: $default-font
+	font-size: 16px
+	font-weight: 400
+	margin: 16px 0 0
 
 .img-responsive
 	display: block
@@ -299,6 +309,47 @@ b, strong
 								cursor: pointer
 								&:focus
 									outline: none
+	.single-page
+		margin-bottom: 50px
+		.aside
+			background-repeat: no-repeat
+			background-position: top center
+			// background-size: cover
+		.page
+			padding-left: 30px
+			.title
+				padding-left: 145px
+				margin-bottom: 40px
+			.page-content
+				p
+					text-indent: 36px
+					margin-bottom: 0
+					img
+						margin: 40px 0
+				img
+					margin: 40px 0 0
+				ul
+					margin-bottom: 22px
+					li
+						position: relative
+						padding-left: 10px
+						&:before
+							content: "-"
+							position: absolute
+							top: 0
+							left: 0
+						p
+							text-indent: 0
+					p
+						text-indent: 0
+				ol
+					margin-bottom: 22px
+					li
+						p
+							text-indent: 0
+			.btn
+				width: 375px
+				margin-top: 50px
 
 
 
