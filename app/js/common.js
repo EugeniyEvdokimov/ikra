@@ -66,6 +66,22 @@ $(document).ready(function() {
           $('.header-nav').toggleClass('collapse');
       })
 
+    // init modal
+    var openModalsBtns = $('[data-modal]');
+
+    openModalsBtns.on('click', function() {
+
+        var target = $(this).attr('data-target');
+        $('#' + target).bPopup({
+            closeClass: 'close-modal',
+            positionStyle: 'fixed',
+            speed: 450,
+            transition: 'slideDown'
+        });
+              
+
+    });
+
 
 
 });
