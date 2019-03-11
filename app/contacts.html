@@ -66,7 +66,7 @@
 						</div>
 						<!-- /header-phone-item -->
 					</div>
-					<a href="#" class="btn btn-sm">Перезвоните мне</a>
+					<a href="#" class="btn btn-sm" data-modal data-target="call-back">Перезвоните мне</a>
 				</div>
 			</div>
 		</div>
@@ -262,7 +262,7 @@
 						</div>
 					</div>
 					<!-- /footer-phone-item -->
-					<a href="#" class="btn btn-sm">Перезвоните мне</a>
+					<a href="#" class="btn btn-sm" data-modal data-target="call-back">Перезвоните мне</a>
 				</div>
 				<!-- /footer-contacts -->
 			</div>
@@ -270,6 +270,28 @@
 		</div>
 	</footer>
 	<!-- FOOTER END -->
+	<!-- CALL BACK START -->
+	<div class="modal" id="call-back">
+		<span class="close-modal icon icon-close"></span>
+		<h1 class="title title-lg text-center">Остались вопросы?</h1>
+		<div class="sub-title text-center">
+			<p>Оставьте заявку и наш менеджер свяжется</p>
+			<p>с Вами в ближайшее время</p>
+		</div>
+		<form>
+			<div class="form-group">
+				<label class="icon icon-user"></label>
+				<input type="text" class="form-control" placeholder="Ваше имя*">
+			</div>
+			<div class="form-group">
+				<label class="icon icon-smartphone"></label>
+				<input class="form-control" type="tel" placeholder="Ваш телефон*">
+			</div>
+			<button type="submit" class="btn btn-lg btn-block">Отправить</button>
+		</form>
+		<!-- /form -->
+	</div>
+    <!-- CALL BACK END -->
 	
 
 	<script src="js/scripts.min.js"></script>
